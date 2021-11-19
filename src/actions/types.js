@@ -1,0 +1,2 @@
+export const SEARCH_LOCATION = 'SEARCH_LOCATION';
+export const LOAD_HISTORY = 'LOAD_HISTORY';
