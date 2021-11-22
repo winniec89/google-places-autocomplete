@@ -1,6 +1,6 @@
 import { SEARCH_LOCATION,  LOAD_HISTORY } from './types';
 
-export const search_location = (payload) => {
+export const searchLocation = (payload) => {
     return (dispatch) => {
         dispatch({
             type: SEARCH_LOCATION,
@@ -9,7 +9,7 @@ export const search_location = (payload) => {
     }
 }
 
-export const search_history = () => {
+export const searchHistory = () => {
     return {
         type: LOAD_HISTORY
     }

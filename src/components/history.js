@@ -1,11 +1,12 @@
 import React from 'react';
-import { useSelector, connect } from "react-redux";
-import { search_history } from '../actions'
+import { useSelector } from "react-redux";
+
+import './scss/history.scss';
 
 const SearchHistory = () => {
     const history = useSelector((state) => state.history);
 
-    return <div>
+    return <div className="history">
         Search History:
         <ul>
             {
@@ -17,8 +18,4 @@ const SearchHistory = () => {
     </div>
 }
 
-const mapStateToProps = (state) => {
-    return { state };
-}
-
-export default connect(mapStateToProps, { search_history })(SearchHistory);
+export default SearchHistory;

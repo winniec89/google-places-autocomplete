@@ -4,8 +4,10 @@ import GoogleAutocomplete from '../components/autocomplete';
 import Map from '../components/map';
 import SearchHistory from '../components/history';
 
+import './index.scss';
+
 const Layout = () => {
-    return <div>
+    return <div className="layout">
         <GoogleAutocomplete />
         <Map />
         <SearchHistory />
